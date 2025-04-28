@@ -1,3 +1,4 @@
+import DashboardChart from "@/components/dashboard-chart/view";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -29,8 +30,10 @@ export default function DashboardPage() {
           <h1 className="text-2xl font-bold">Dashboard</h1>
         </header>
 
+        <DashboardChart />
+
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <Card>
             <CardContent className="p-4">
               <h2 className="text-lg font-semibold">Vendas Totais</h2>
@@ -50,8 +53,6 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
         </div>
-
-        {/* Aqui depois podemos colocar uma tabela de vendas */}
 
         {/* Tabela de Vendas */}
         <section className="bg-white p-6 rounded-lg shadow-md">
