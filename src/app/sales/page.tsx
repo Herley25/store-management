@@ -1,3 +1,4 @@
+import DashboardChart from "@/components/dashboard-chart/view";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function SalesPage() {
@@ -6,6 +7,8 @@ export default function SalesPage() {
       <h1 className="text-2xl font-bold mb-6">Vendas</h1>
       
       {/* Aqui pode vir gráficos, relatórios, etc */}
+      <DashboardChart />
+
       <Card>
         <CardContent>
           <h2 className="text-lg font-semibold">Total de Vendas</h2>

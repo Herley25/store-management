@@ -1,3 +1,4 @@
+import DashboardChart from "@/components/dashboard-chart/view";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function UsersPage() {
@@ -6,6 +7,8 @@ export default function UsersPage() {
       <h1 className="text-2xl font-bold mb-6">Usuários</h1>
       
       {/* Aqui pode vir a lista de usuários, gráficos, etc */}
+      <DashboardChart />
+      
       <Card>
         <CardContent>
           <h2 className="text-lg font-semibold">Total de Usuários</h2>
